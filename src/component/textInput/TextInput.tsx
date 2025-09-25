@@ -39,7 +39,7 @@ const TextInput: React.FC<TextInputProps> = ({
   className = "",
 }) => {
   const baseInputClasses = `
-    w-full pl-12 pr-4 py-3 
+    w-full pl-12 pr-4 py-1 
     border-2 rounded-lg 
     transition-all duration-200 
     focus:outline-none focus:ring-2 focus:ring-blue-500/20
