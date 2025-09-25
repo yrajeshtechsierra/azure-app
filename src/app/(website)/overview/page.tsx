@@ -1,5 +1,11 @@
-import React from 'react'
-import { EyeSlashIcon, StarIcon, UserGroupIcon } from '@heroicons/react/24/outline';
+import React from "react";
+import {
+  EyeSlashIcon,
+  StarIcon,
+  UserGroupIcon,
+} from "@heroicons/react/24/outline";
+import boardIcon from "@/assets/icons/add_description_upsell.ZQGDPs.svg";
+import Image from "next/image";
 
 const Overview = () => {
     
@@ -37,30 +43,35 @@ const Overview = () => {
       </div>
 
       <div className="my-6 mx-8 flex">
-        <ul className="bg-white basis-[73%] pt-4 pb-12 px-6 rounded shadow-lg">
-          <li>
-            <h4 className="font-semibold text-md">About this project</h4>
-          </li>
-          <li className="mt-8 mb-6">
-            <h5 className="font-semibold">Help others to get on board!</h5>
-            <p className='flex flex-col text-gray-600 mt-2'>
-              <span>
-                Describe your project and make it easier for other people to
-              </span>
-              <span>understand it.</span>
-            </p>
-          </li>
-          <li>
-            <button className='bg-gray-100 px-6 py-2 font-medium'>+ Add Project Descriptions</button>
-          </li>
-        </ul>
+        <div className="bg-white basis-[65%] pt-4 pb-12 px-6 rounded shadow-lg flex justify-between items-center">
+          <ul>
+            <li>
+              <h4 className="font-semibold text-md">About this project</h4>
+            </li>
+            <li className="mt-8 mb-6">
+              <h5 className="font-semibold">Help others to get on board!</h5>
+              <p className="flex flex-col text-gray-600 mt-2">
+                <span>
+                  Describe your project and make it easier for other people to
+                </span>
+                <span>understand it.</span>
+              </p>
+            </li>
+            <li>
+              <button className="bg-gray-100 px-6 py-2 font-medium">
+                + Add Project Descriptions
+              </button>
+            </li>
+          </ul>
+          <Image src={boardIcon} alt="About this project" />
+        </div>
 
-        <div className="ml-[1%] bg-white basis-[26%] p-4 rounded shadow-lg">
+        <div className="ml-[1%] bg-white basis-[34%] p-4 rounded shadow-lg">
           project stats
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Overview;
